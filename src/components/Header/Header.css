@@ -31,7 +31,22 @@
   gap: 64px;
 }
 
+.navigation > span {
+  position: relative;
+}
 
-.navigation > span:hover {
+.navigation > span::before {
+  content:'❯ ';
+  transition: .3s;
+  position: absolute;
   font-weight: 600;
+  line-height: 30px;
+  left: -24px;
+  opacity: 0;
+  color: #FF5618;
+}
+
+.navigation > span:hover::before {
+  left: -20px;
+  opacity: 1;
 }
