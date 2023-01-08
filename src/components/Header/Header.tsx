@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Navigation = () => {
     return (
         <div className='navigation'>
-          <span>projects</span>
-          <span>experiments</span>
-          <span>resume</span>
-          <span>contact</span>
+          <Link to={`projects`}><span>projects</span></Link>
+          <Link to={`experiments`}><span>experiments</span></Link>
+          <Link to={`about`}><span>about</span></Link>
+          <Link to={`contact`}><span>contact</span></Link>
         </div>
     );
 };
@@ -14,7 +15,7 @@ const Navigation = () => {
 const Title = () => {
   return (
     <div className='title-container'>
-      <span className='title'><b>Brennan</b> Pilcher</span>
+      <Link to={'/'}><span className='title'><b>Brennan</b> Pilcher</span></Link>
       <span className='subtitle'>code + design</span>
     </div>
   );

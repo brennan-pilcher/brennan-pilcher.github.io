@@ -31,11 +31,11 @@
   gap: 64px;
 }
 
-.navigation > span {
+.navigation > a {
   position: relative;
 }
 
-.navigation > span::before {
+.navigation > a::before {
   content:'❯ ';
   transition: .3s;
   position: absolute;
@@ -46,7 +46,7 @@
   color: #FF5618;
 }
 
-.navigation > span:hover::before {
+.navigation > a:hover::before {
   left: -20px;
   opacity: 1;
 }
