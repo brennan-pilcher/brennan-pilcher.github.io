@@ -7,7 +7,7 @@ const Navigation = () => {
           <Link to={`projects`}><span>projects</span></Link>
           <Link to={`experiments`}><span>experiments</span></Link>
           <Link to={`about`}><span>about</span></Link>
-          <a href="https://registry.jsonresume.org/brennan-pilcher"><span>résumé</span></a>
+          <a href="https://registry.jsonresume.org/brennan-pilcher" target="_blank" rel="noopener nofollow"><span>résumé</span></a>
         </div>
     );
 };
