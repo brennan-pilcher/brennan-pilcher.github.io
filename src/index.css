@@ -19,3 +19,13 @@ a {
 .highlight {
   color: #FF5618;
 }
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: #FF5618;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #FF5618;
+}
