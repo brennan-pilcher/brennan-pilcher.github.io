@@ -4,6 +4,7 @@
 }
 
 .title-container {
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,14 +13,32 @@
 
 .title {
   font-family: 'Raleway', sans-serif;
-  font-size: 48px;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.first-name, .last-name {
+  transition: all 0.3s;
+}
+
+.last-name {
+  color: #18191E;
+  background-color: #FFF9FB;
+  padding: 0 10px;
+}
+
+.title:hover > .first-name {
+  color: #FF5618;
+}
+
+.title:hover > .last-name {
+  background-color: #FF5618;
 }
 
 .subtitle {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
 .navigation {

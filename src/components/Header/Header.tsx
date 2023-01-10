@@ -7,7 +7,7 @@ const Navigation = () => {
           <Link to={`projects`}><span>projects</span></Link>
           <Link to={`experiments`}><span>experiments</span></Link>
           <Link to={`about`}><span>about</span></Link>
-          <a href="https://registry.jsonresume.org/brennan-pilcher" target="_blank" rel="noopener nofollow"><span>résumé</span></a>
+          <a href="https://registry.jsonresume.org/brennan-pilcher" target="_blank" rel="noreferrer"><span>résumé</span></a>
         </div>
     );
 };
@@ -15,7 +15,7 @@ const Navigation = () => {
 const Title = () => {
   return (
     <div className='title-container'>
-      <Link to={'/'}><span className='title'><b>Brennan</b> Pilcher</span></Link>
+      <Link to={'/'}><div className='title'><span className='first-name'>Brennan</span> <span className='last-name'>Pilcher</span></div></Link>
       <span className='subtitle'>code + design</span>
     </div>
   );
