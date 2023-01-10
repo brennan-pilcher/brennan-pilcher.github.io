@@ -1,15 +1,15 @@
 import Header from '../../components/Header/Header';
-import './About.css';
+import './Work.css';
 
-const About = () => {
+const Work = () => {
   return (
     <>
       <Header />
       <p>
-        about
+        work
       </p>
     </>
-  )
+  );
 }
 
-export default About;
+export default Work;
