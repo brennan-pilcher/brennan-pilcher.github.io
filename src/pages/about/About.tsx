@@ -5,9 +5,11 @@ const About = () => {
   return (
     <>
       <Header />
-      <p>
-        about
-      </p>
+      <div className='container'>
+        <p>
+          about
+        </p>
+      </div>
     </>
   )
 }

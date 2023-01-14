@@ -5,9 +5,11 @@ const Experiments = () => {
   return (
     <>
       <Header />
-      <p>
-        experiments
-      </p>
+      <div className='container'>
+        <p>
+          experiments
+        </p>
+      </div>
     </>
   );
 }
