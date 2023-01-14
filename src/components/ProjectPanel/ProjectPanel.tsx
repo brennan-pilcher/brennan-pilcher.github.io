@@ -4,9 +4,10 @@ interface ProjectPanelProps {
   title: string;
   description: string;
   tags: string[];
+  imageSrc: string;
 }
 
-const ProjectPanel = ({ title, description, tags }: ProjectPanelProps) => {
+const ProjectPanel = ({ title, description, tags, imageSrc }: ProjectPanelProps) => {
   return (
     <div className='project-panel'>
       <div className='project-panel-text-content'>
@@ -19,7 +20,7 @@ const ProjectPanel = ({ title, description, tags }: ProjectPanelProps) => {
         </div>
       </div>
       <div className='project-panel-image-content'>
-        <img src='./assets/project-image.png' />
+        <img src={imageSrc} />
       </div>
     </div>
   );
