@@ -4,8 +4,9 @@ import './Header.css';
 const Navigation = () => {
     return (
         <div className='navigation'>
-          <Link to={`work`}><span>work</span></Link>
-          <Link to={`about`}><span>about</span></Link>
+          <Link to={`/work`}><span>work</span></Link>
+          <Link to={`/experiments`}><span>experiments</span></Link>
+          <Link to={`/about`}><span>about</span></Link>
           <a href="https://registry.jsonresume.org/brennan-pilcher" target="_blank" rel="noreferrer"><span>résumé</span></a>
         </div>
     );
