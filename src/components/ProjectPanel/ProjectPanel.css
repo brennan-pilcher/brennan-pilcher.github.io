@@ -1,49 +1,69 @@
 .project-panel {
-  display: flex;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  max-width: 325px;
+  border-radius: 16px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.project-panel:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.project-panel-image {
+  transition: all .3s;
   width: 100%;
-  box-shadow: -3px 0 0 #FF5618;
-  margin: 48px 0;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.project-panel:hover > .project-panel-image {
+  filter: blur(1px);
+}
+
+.project-panel:hover > .project-panel-text-content {
+  text-shadow: 1px 1px 6px black;
 }
 
 .project-panel-text-content {
-  justify-content: space-between;
-  flex: 1 1 0;
+  transition: all .3s;
+  background: linear-gradient(#18191e38, #18191EFF);
+  position: absolute;
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
-}
-
-.project-panel-image-content {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1 1 0;
-}
-
-.project-panel-image-content > img {
-  height: 280px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  justify-content: flex-start;
+  height: calc(100% - 32px);
+  width: calc(100% - 32px);
+  bottom: 0px;
+  left: 0px;
+  padding: 16px;
 }
 
 .project-panel-title {
   font-family: 'Lato', sans-serif;
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 40px;
   text-transform: capitalize;
+  margin-bottom: 12px;
 }
 
 .project-panel-description {
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .project-panel-tags {
   display: flex;
-  gap: 18px;
-  margin-bottom: 6px;
+  column-gap: 8px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .project-panel-tag {
@@ -57,5 +77,22 @@
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
+  text-shadow: none;
   padding: 4px 6px;
+}
+
+
+@media (max-width: 576px) {
+  .project-panel {
+    max-width: 100%;
+  }
+
+  .project-panel-title {
+    font-size: 32px;
+  }
+
+  .project-panel-description {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
