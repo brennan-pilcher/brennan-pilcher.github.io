@@ -16,11 +16,11 @@
   transition: all .3s;
   width: 100%;
   z-index: -1;
-  filter: blur(3px);
+  filter: blur(0px);
 }
 
 .project-panel:hover > .project-panel-image {
-  filter: blur(1px);
+  filter: blur(4px);
 }
 
 .project-panel:hover > .project-panel-text-content {
@@ -39,6 +39,7 @@
   bottom: 0px;
   left: 0px;
   padding: 16px;
+  text-shadow: 1px 1px 6px black;
 }
 
 .project-panel-title {

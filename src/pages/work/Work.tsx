@@ -20,31 +20,31 @@ const Work = () => {
               title={'Pizza Chain'}
               description={"Developed a replacement website for a national pizza chain serving millions of customers a day. Individual contributor on the cart and checkout flow team and Tech Lead for the non-pizza product pages team."}
               tags={['typescript', 'next.js', 'redux', 'jest', 'react testing library', 'docker', 'kubernetes']}
-              imageSrc={'./assets/pizza-placeholder-portrait.png'}
+              imageSrc={'./assets/pizza-portrait.jpg'}
             />
             <ProjectPanel
               title={'Sports Analytics Firm'}
               description={"Client wanted to totally rebuild their mobile application from the ground up with React Native in a short span of time. I helped to build out the app's core content experience, focusing on the article view, news feed, and data fetching / caching architecture."}
               tags={['typescript', 'react native', 'redux', 'jest']}
-              imageSrc={'./assets/sports-placeholder-portrait.png'}
+              imageSrc={'./assets/sports-portrait.jpg'}
             />
             <ProjectPanel
               title={'Grocery Retailer'}
               description={"Developed microservices to replace a business-critical system that will eventually be scaled to hundreds of thousands of daily users and millions of transactions with Spring Boot and Docker, deployed on Kubernetes in Azure."}
               tags={['java', 'spring boot', 'junit', 'mockito', 'docker', 'kubernetes']}
-              imageSrc={'./assets/pizza-placeholder-portrait.png'}
+              imageSrc={'./assets/grocery-portrait.jpg'}
             />
             <ProjectPanel
               title={'News Non-Profit'}
               description={"Contributed to the development and architecture of a React Native mobile application as well as maintenance and upgrades on the Ruby on Rails website and API layer."}
               tags={['javascript', 'react native', 'redux', 'jest', 'ruby on rails']}
-              imageSrc={'./assets/pizza-placeholder-portrait.png'}
+              imageSrc={'./assets/news-portrait.jpg'}
             />
             <ProjectPanel
               title={'Smart Home Startup'}
               description={"Contributed to a technical assessment analyzing the quality of the client's code, provided insights on architecture and workflow, and presented a report on our findings and recommendations to C-level executives."}
               tags={[]}
-              imageSrc={'./assets/pizza-placeholder-portrait.png'}
+              imageSrc={'./assets/smart-home-portrait.jpg'}
             />
         </div>
         <div className='work-section-title'>
