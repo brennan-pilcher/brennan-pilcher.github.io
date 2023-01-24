@@ -65,14 +65,14 @@ const Work = () => {
             <ProjectPanel
               title={'React Weather'}
               description={"A simple weather app, built as a learning project. Recently migrated the backend from Heroku to Azure and updated to use more modern React patterns."}
-              tags={['javascript', 'react', 'jest', 'azure cloud functions']}
+              tags={['javascript', 'react', 'jest', 'github pages', 'azure cloud functions']}
               imageSrc={'./assets/react-weather-portrait.png'}
             />
             <ProjectPanel
-              title={'Grocery Retailer'}
-              description={"Developed microservices to replace a business-critical system that will eventually be scaled to hundreds of thousands of daily users and millions of transactions with Spring Boot and Docker, deployed on Kubernetes in Azure."}
-              tags={['java', 'spring boot', 'junit', 'mockito', 'docker', 'kubernetes']}
-              imageSrc={'./assets/pizza-placeholder-portrait.png'}
+              title={"Where's Bernie?"}
+              description={`A silly weekend project based on Where's Waldo and the viral photo of Bernie Sanders wearing mittens at the US presidential inauguration in 2020.`}
+              tags={['javascript', 'html5 canvas', 'github pages']}
+              imageSrc={'./assets/wheres-bernie-portrait.png'}
             />
         </div>
       </div>
