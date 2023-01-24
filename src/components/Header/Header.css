@@ -1,4 +1,5 @@
 .header {
+  margin: 32px 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -60,7 +61,7 @@
   position: absolute;
   font-weight: 600;
   line-height: 24px;
-  left: -16px;
+  left: -18px;
   opacity: 0;
   color: #FF5618;
 }

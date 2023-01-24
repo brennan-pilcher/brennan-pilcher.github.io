@@ -1,18 +1,42 @@
-.client-projects {
+.projects {
   margin: 0 auto;
   max-width: 1800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+  margin-bottom: 64px;
 }
 
 .work-summary {
   font-family: 'Merriweather', serif;
-  font-size: 24px;
-  line-height: 42px;
-  margin: 16px 0 96px 0;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 16px 0 64px 0;
 }
 
 .work-section-title {
   font-family: 'Merriweather', serif;
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 60px;
+  line-height: 60px;
   margin: 64px 0 32px 0;
+}
+
+@media (max-width: 576px) {
+  .client-projects {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .work-section-title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 16px;
+  }
+
+  .work-summary {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
 }
