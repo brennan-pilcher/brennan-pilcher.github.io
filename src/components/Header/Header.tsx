@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from 'usehooks-ts';
 import './Header.css';
 
 const Navigation = () => {
@@ -21,12 +22,18 @@ const Title = () => {
   );
 }
 
-
 const Header = () => {
+  const useMobileHeader = useMediaQuery('(min-width: 950px)')
+  
   return (
     <div className='header'>
       <Title />
-      <Navigation />
+      {useMobileHeader ?
+        <Navigation />
+        : <span className="material-symbols-outlined menu-icon">
+            menu
+          </span>
+      }
     </div>
   );
 }
