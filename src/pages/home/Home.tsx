@@ -1,4 +1,5 @@
 import Header from '../../components/Header/Header';
+import Terminal from '../../components/Terminal/Terminal';
 import './Home.css';
 
 const Home = () => {
@@ -11,6 +12,9 @@ const Home = () => {
         </div>
         <div className='hero'>
           <span>I'm passionate about the power of technology to enable creativity.</span>
+        </div>
+        <div className='terminal-container'>
+          <Terminal />
         </div>
       </div>
     </>

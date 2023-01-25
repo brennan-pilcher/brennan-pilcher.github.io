@@ -1,0 +1,60 @@
+.terminal {
+  position: relative;
+  width: 600px;
+  height: 360px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #1a1b26;
+  border-radius: 8px;
+  outline: 1px solid #4B4F5D;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all .3s;
+  animation-duration: 1s;
+  animation-name: slidein-from-left;
+}
+
+.terminal-top-nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 42px;
+  width: 100%;
+  background-color: #0f1016;
+  border-radius: 8px 8px 0 0;
+  padding: 0 8px;
+  box-shadow: 0 1px 0 #4B4F5D;
+}
+
+.terminal-top-nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 200px;
+  height: 36px;
+  background-color: #1a1b26;
+  border-radius: 8px 8px 0 0;
+  padding: 0 16px;
+  border: 1px solid #4B4F5D;
+  border-width: 1px 1px 0px 1px;
+  box-shadow: 0 1px 0 #1a1b26;
+}
+
+.terminal-interior {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  row-gap: 4px;
+}
+
+.terminal-code-dir {
+  font-weight: 600;
+  color: #7278a5;
+}
+
+.terminal-code-caret {
+  color: #FF5618;
+}
