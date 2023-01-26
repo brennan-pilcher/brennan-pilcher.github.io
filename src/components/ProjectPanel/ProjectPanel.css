@@ -27,9 +27,9 @@
   text-shadow: 1px 1px 6px black;
 }
 
-.project-panel-text-content {
+.project-panel-content {
   transition: all .3s;
-  background: linear-gradient(#18191e38, #18191EFF);
+  background: linear-gradient(#18191e83, #18191EFF);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,6 @@
   column-gap: 8px;
   row-gap: 8px;
   flex-wrap: wrap;
-  margin-top: auto;
 }
 
 .project-panel-tag {
@@ -82,6 +81,90 @@
   padding: 4px 6px;
 }
 
+.project-panel-bottom-section {
+  margin-top: auto;
+}
+
+.project-panel-buttons {
+  display: flex;
+  justify-content: flex-start;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 24px;
+  padding: 0;
+  gap: 12px;
+  white-space: pre;
+}
+
+.github-button {
+  position: relative;
+  transition: all .3s;
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-button-icons {
+  width: 100%;
+  height: 100%;
+}
+
+.github-button-icons > img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 8px;
+}
+
+.github-icon {
+  opacity: 1;
+  transition: all .3s;
+}
+
+.github-icon-white {
+  opacity: 0;
+  transition: all .3s;
+}
+
+.github-button:hover > .github-button-icons > .github-icon {
+  opacity: 0;
+}
+
+.github-button:hover > .github-button-icons > .github-icon-white {
+  opacity: 1;
+}
+
+.project-button {
+  position: relative;
+  transition: all .3s;
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.project-icon {
+  font-size: 32px;
+}
+
+.project-button:hover, .github-button:hover {
+  background-color: #FF5618;
+  color: white;
+}
 
 @media (max-width: 576px) {
   .project-panel {

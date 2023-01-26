@@ -29,9 +29,15 @@ const Work = () => {
               imageSrc={'./assets/sports-portrait.jpg'}
             />
             <ProjectPanel
+              title={'Global Consultancy'}
+              description={"Worked on a full-stack internal web application with a React frontend and a backend supported by Solr and Spring Boot microservices. Contributed significantly to the design and the implementation of a new recommendations microservice as well as real-time notifications for users."}
+              tags={['typescript', 'react', 'redux', 'java', 'spring boot', 'solr', 'redis','junit', 'docker', 'kubernetes']}
+              imageSrc={'./assets/consultancy-portrait.jpg'}
+            />
+            <ProjectPanel
               title={'Grocery Retailer'}
               description={"Developed microservices to replace a business-critical system that will eventually be scaled to hundreds of thousands of daily users and millions of transactions with Spring Boot and Docker, deployed on Kubernetes in Azure."}
-              tags={['java', 'spring boot', 'junit', 'mockito', 'docker', 'kubernetes']}
+              tags={['java', 'spring boot', 'junit', 'docker', 'kubernetes']}
               imageSrc={'./assets/grocery-portrait.jpg'}
             />
             <ProjectPanel
@@ -61,18 +67,24 @@ const Work = () => {
               description={"Created a fast-paced block stacking game for Android with a friend using the libGDX game development library."}
               tags={['java', 'libgdx']}
               imageSrc={'./assets/blockblockblock-portrait.png'}
+              projectLink={'https://play.google.com/store/apps/details?id=com.vorobeans.stacker'}
             />
             <ProjectPanel
               title={'React Weather'}
               description={"A simple weather app, built as a learning project. Recently migrated the backend from Heroku to Azure and updated to use more modern React patterns."}
               tags={['javascript', 'react', 'jest', 'github pages', 'azure cloud functions']}
               imageSrc={'./assets/react-weather-portrait.png'}
+              codeLink={'https://github.com/brennan-pilcher/react-weather'}
+              projectLink={'https://pilcher.dev/react-weather/'}
+
             />
             <ProjectPanel
               title={"Where's Bernie?"}
               description={`A silly weekend project based on Where's Waldo and the viral photo of Bernie Sanders wearing mittens at the US presidential inauguration in 2020.`}
               tags={['javascript', 'html5 canvas', 'github pages']}
               imageSrc={'./assets/wheres-bernie-portrait.png'}
+              codeLink={'https://github.com/brennan-pilcher/wheres-bernie'}
+              projectLink={'https://pilcher.dev/wheres-bernie/'}
             />
         </div>
       </div>
