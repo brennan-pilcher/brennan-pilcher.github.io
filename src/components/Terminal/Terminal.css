@@ -48,6 +48,7 @@
   flex-direction: column;
   padding: 16px;
   row-gap: 4px;
+  white-space: pre;
 }
 
 .terminal-code-dir {
@@ -57,4 +58,8 @@
 
 .terminal-code-caret {
   color: #FF5618;
+}
+
+.terminal-line-header {
+  color: #3B9F30;
 }

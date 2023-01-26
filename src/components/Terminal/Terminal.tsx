@@ -1,5 +1,13 @@
 import './Terminal.css';
 
+interface TerminalLineProps {
+  text: string;
+  isHeader?: boolean;
+}
+
+const TerminalLine = ({ text, isHeader = false }: TerminalLineProps) =>
+  <div><span className={isHeader ? 'terminal-line-header' : ''}>{text}</span></div>
+
 const Terminal = () => {
 
   return (
@@ -11,10 +19,34 @@ const Terminal = () => {
       </div>
       <div className='terminal-interior'>
         <div><span className='terminal-code-dir'>~/code</span><span className='terminal-code-caret'> ❯ </span><span>cat ~/Documents/about-me.txt</span></div>
-        <div><span>name: Brennan Pilcher</span></div>
-        <div><span>email: brennan.pilcher@gmail.com</span></div>
-        <div><span>github: @brennan-pilcher</span></div>
-        <div><span>years-of-experience: 3 in IT, 4.5 in Software Development</span></div>
+        <TerminalLine
+          isHeader={true}
+          text={'[name]'}
+        />
+        <TerminalLine
+          text={'  Brennan Pilcher'}
+        />
+        <TerminalLine
+          isHeader={true}
+          text={'[email]'}
+        />
+        <TerminalLine
+          text={'  brennan.pilcher@gmail.com'}
+        />
+        <TerminalLine
+          isHeader={true}
+          text={'[github]'}
+        />
+        <TerminalLine
+          text={'  @brennan-pilcher'}
+        />
+        <TerminalLine
+          isHeader={true}
+          text={'[years-of-experience]'}
+        />
+        <TerminalLine
+          text={'  3 in IT, 4.5 in Software Development'}
+        />
       </div>
     </div>
   );
