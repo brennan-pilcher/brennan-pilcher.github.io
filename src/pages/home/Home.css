@@ -3,6 +3,8 @@
   font-size: 32px;
   line-height: 48px;
   margin-bottom: 48px;
+  animation-name: slide-in-from-right;
+  animation-duration: 1s;
 }
 
 .terminal-container {
