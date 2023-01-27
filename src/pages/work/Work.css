@@ -12,14 +12,14 @@
   font-family: 'Merriweather', serif;
   font-size: 22px;
   line-height: 32px;
-  margin: 16px 0 64px 0;
+  margin: 16px 0 48px 0;
 }
 
 .work-section-title {
   font-family: 'Merriweather', serif;
   font-size: 60px;
   line-height: 60px;
-  margin: 64px 0 32px 0;
+  margin: 32px 0 12px 0;
 }
 
 @media (max-width: 576px) {
@@ -28,9 +28,13 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .projects {
+    gap: 32px;
+  }
+
   .work-section-title {
-    font-size: 42px;
-    line-height: 42px;
+    font-size: 38px;
+    line-height: 38px;
     margin-bottom: 16px;
   }
 

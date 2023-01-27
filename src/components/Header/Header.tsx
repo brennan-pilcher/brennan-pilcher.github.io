@@ -1,38 +1,55 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'usehooks-ts';
+import MenuOverlay from '../MenuOverlay/MenuOverlay';
 import './Header.css';
 
-const Navigation = () => {
+const Navigation = ({ mobile, closeMenuOverlay }: { mobile: boolean, closeMenuOverlay: () => void }) => {
     return (
-        <div className='navigation'>
-          <Link to={`/work`}><span>work</span></Link>
-          <Link to={`/about`}><span>about</span></Link>
-          <a href="https://registry.jsonresume.org/brennan-pilcher" target="_blank" rel="noreferrer"><span>résumé</span></a>
+        <div className={`navigation${mobile ? '-mobile' : ''}`}>
+          <Link to={`/work`} onClick={closeMenuOverlay}><span>work</span></Link>
+          <Link to={`/about`} onClick={closeMenuOverlay}><span>about</span></Link>
+          <a href="https://registry.jsonresume.org/brennan-pilcher" target="_blank" rel="noreferrer" onClick={closeMenuOverlay}><span>résumé</span></a>
         </div>
     );
 };
 
-const Title = () => {
+const Title = ({ closeMenuOverlay }: { closeMenuOverlay: () => void } ) => {
   return (
     <div className='title-container'>
-      <Link to={'/'}><div className='title'><span className='first-name'>Brennan</span> <span className='last-name'>Pilcher</span></div></Link>
+      <Link to={'/'} onClick={closeMenuOverlay}><div className='title'><span className='first-name'>Brennan</span> <span className='last-name'>Pilcher</span></div></Link>
       <span className='subtitle'>code + design</span>
     </div>
   );
 }
 
 const Header = () => {
-  const useMobileHeader = useMediaQuery('(min-width: 950px)')
+  const [menuOverlayOpen, setMenuOverlayOpen] = useState(false);
+  const useMobileHeader = useMediaQuery('(max-width: 768px)')
+
+  useEffect(() => {
+    if (!useMobileHeader && menuOverlayOpen) {
+      console.log("close mobile header")
+      setMenuOverlayOpen(false)
+    }
+  }, [useMobileHeader, menuOverlayOpen])
   
   return (
     <div className='header'>
-      <Title />
-      {useMobileHeader ?
-        <Navigation />
-        : <span className="material-symbols-outlined menu-icon">
+      <Title closeMenuOverlay={() => setMenuOverlayOpen(false)} />
+      {
+        useMobileHeader ?
+          <span className="material-symbols-outlined menu-icon" onClick={() => setMenuOverlayOpen(true)}>
             menu
           </span>
+        :  <Navigation mobile={false} closeMenuOverlay={() => setMenuOverlayOpen(false)}/>
       }
+      {menuOverlayOpen && (
+        <MenuOverlay
+          navigation={<Navigation mobile={true} closeMenuOverlay={() => setMenuOverlayOpen(false)} />}
+          closeMenuOverlay={() => setMenuOverlayOpen(false)}
+        />
+        )}
     </div>
   );
 }

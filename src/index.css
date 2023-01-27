@@ -39,7 +39,7 @@ a {
 
 @media (max-width: 576px) {
   .container {
-    margin: 24px 16px 0 16px;
+    margin: 24px 12px 0 12px;
   }
 }
 
@@ -52,5 +52,18 @@ a {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+
+@keyframes slidein-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

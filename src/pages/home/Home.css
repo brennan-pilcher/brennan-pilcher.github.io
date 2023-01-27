@@ -2,7 +2,6 @@
   font-family: 'Merriweather', serif;
   font-size: 32px;
   line-height: 48px;
-  /* width: 70%; */
   margin-bottom: 48px;
 }
 
@@ -10,4 +9,12 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
 }

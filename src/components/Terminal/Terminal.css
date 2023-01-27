@@ -1,7 +1,7 @@
 .terminal {
   position: relative;
   width: 600px;
-  height: 360px;
+  height: 320px;
   font-family: 'Source Code Pro', monospace;
   font-size: 14px;
   line-height: 18px;
@@ -62,4 +62,11 @@
 
 .terminal-line-header {
   color: #3B9F30;
+}
+
+@media (max-width: 768px) {
+  .terminal {
+    width: 100%;
+    animation-name: slidein-from-bottom;
+  }
 }
