@@ -1,0 +1,46 @@
+.content-block {
+  display: flex;
+  flex-direction: column;
+  animation-name: slide-in-from-right;
+  animation-duration: 1s;
+  gap: 12px;
+}
+
+.heading {
+  font-family: 'Raleway', serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 8px;
+}
+
+.content-paragraph {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+  transition: all .3s;
+  color: black;
+  background-color: white;
+  height: 48px;
+  cursor: pointer;
+  margin: 24px 0;
+}
+
+.content-button:hover {
+  background-color: #FF5618;
+  color: white;
+}
+
+.content-button-text-accent {
+  margin-left: 12px;
+}

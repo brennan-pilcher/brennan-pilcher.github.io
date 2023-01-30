@@ -29,7 +29,6 @@ const Header = () => {
 
   useEffect(() => {
     if (!useMobileHeader && menuOverlayOpen) {
-      console.log("close mobile header")
       setMenuOverlayOpen(false)
     }
   }, [useMobileHeader, menuOverlayOpen])
