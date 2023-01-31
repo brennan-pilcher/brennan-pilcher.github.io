@@ -1,6 +1,7 @@
 export interface TextContentItem {
   type: 'text';
   content: string;
+  bold?: boolean;
 }
 
 export interface ButtonContentItem {

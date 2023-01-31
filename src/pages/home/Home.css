@@ -2,29 +2,40 @@
   font-family: 'Merriweather', serif;
   font-size: 32px;
   line-height: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   animation-name: slide-in-from-right;
   animation-duration: 1s;
 }
 
-.terminal-container {
+.hero-image {
+  animation-name: slide-in-from-right;
+  animation-duration: 1s;
+}
+
+.home-content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  column-gap: 48px;
+  row-gap: 24px;
   width: 100%;
-  margin-bottom: 48px;
+  margin: 64px 0;
+}
+
+.home-content-container > * {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .hero {
     font-size: 22px;
     line-height: 28px;
-    margin-bottom: 24px;
+    margin: 24px 0;
   }
   
-  .terminal-container {
+  .home-content-container {
     display: grid;
     grid-template-columns: 100%;
     width: 100%;
+    margin: 32px 0;
   }
 }

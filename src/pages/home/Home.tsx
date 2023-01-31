@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import ContentBlock from '../../components/ContentBlock/ContentBlock';
+import { useEffect } from 'react';import ContentBlock from '../../components/ContentBlock/ContentBlock';
 import Header from '../../components/Header/Header';
 import Terminal from '../../components/Terminal/Terminal';
 import './Home.css';
@@ -15,23 +14,7 @@ const Home = () => {
         <div className='hero'>
           <span>I'm passionate about the power of technology to enable creativity.</span>
         </div>
-        <div className='terminal-container'>
-          <ContentBlock
-            title='Methodology'
-            content={[
-              {
-                type: 'text',
-                content: "Working closely with other developers, designers, and business stakeholders is one of the things I enjoy most about building software."
-              },
-              {
-                type: 'text',
-                content: "I thrive in collaborative environments where I can tackle interesting problems, learn from my colleagues, and be encouraged to share and receive feedback."
-              }
-            ]}
-          />
-          <Terminal />
-        </div>
-        <div className='terminal-container'>
+        <div className='home-content-container'>
           <ContentBlock
             title='Development'
             content={[
@@ -41,7 +24,7 @@ const Home = () => {
               },
               {
                 type: 'text',
-                content: "In my free time, I've been learning Unity and C# to pursue my interest in Game Development."
+                content: "I prefer to work in environments where pair programming, continuous integration / continuous delivery, and automated testing are encouraged."
               },
               {
                 type: 'button',
@@ -49,7 +32,43 @@ const Home = () => {
                 local: true,
                 link: '/work'
               }
-              
+            ]}
+          />
+          <Terminal />
+        </div>
+        <div className='home-content-container'>
+          <img src="./assets/pixel-6-mockups.png" className='hero-image' />
+          <ContentBlock
+            title='Methodology'
+            content={[
+              {
+                type: 'text',
+                content: "Working with other developers, designers, and business stakeholders is one of the things I enjoy most about building software. I prefer:"
+              },
+              {
+                type: 'text',
+                content: "Working Collaboratively",
+                bold: true
+              },
+              {
+                type: 'text',
+                content: "Prioritize fast feedback and focus on eliminating communication barriers to get things done efficiently"
+              },
+              {
+                type: 'text',
+                content: "Building Iteratively",
+                bold: true
+              },
+              {
+                type: 'text',
+                content: "Deliver features and products in \"thin slices\" that reach your users early and often, then drive improvements based on feedback"
+              },
+              {
+                type: 'button',
+                text: 'more about me',
+                local: true,
+                link: '/about'
+              }
             ]}
           />
         </div>

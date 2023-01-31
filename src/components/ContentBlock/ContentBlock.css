@@ -21,6 +21,10 @@
   line-height: 28px;
 }
 
+.bold-text {
+  font-weight: 700;
+}
+
 .content-button {
   display: flex;
   justify-content: center;
@@ -43,4 +47,15 @@
 
 .content-button-text-accent {
   margin-left: 12px;
+}
+
+@media (max-width: 768px) {
+  .content-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .content-block {
+    gap: 6px;
+  }
 }
