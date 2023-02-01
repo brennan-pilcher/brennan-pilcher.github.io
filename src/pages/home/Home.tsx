@@ -9,28 +9,45 @@ const Home = () => {
       <Header />
       <div className='container'>
         <div className='hero'>
-          <span>I'm a <span className='highlight'>full stack developer</span> with a background in <span className='highlight'>art and design</span>, currently working as a Senior Consultant at <a href='https://www.thoughtworks.com' target='_blank' rel='noreferrer' className='link'>Thoughtworks</a>.</span>
+          <span>Hey there! I'm Brennan Pilcher.</span>
         </div>
-        <div className='hero'>
-          <span>I'm passionate about the power of technology to enable creativity.</span>
+        <div className='hero-subtitle'>
+          <span>I'm a <span className='highlight'>full stack developer</span> with a background in <span className='highlight'>art and design</span>, currently working as a Senior Consultant at <a href='https://www.thoughtworks.com' target='_blank' rel='noreferrer' className='link'>Thoughtworks</a>.</span>
         </div>
         <div className='home-content-container'>
           <ContentBlock
-            title='Development'
             content={[
               {
-                type: 'text',
-                content: "Most of my projects have been in JavaScript, TypeScript, and Java, but I jump at the chance to learn new technologies and techniques."
+                type: 'heading',
+                text: "Methodology"
               },
               {
                 type: 'text',
-                content: "I prefer to work in environments where pair programming, continuous integration / continuous delivery, and automated testing are encouraged."
+                text: "Working with other developers, designers, and business stakeholders is one of the things I enjoy most about building software. I prefer:"
+              },
+              {
+                type: 'heading',
+                text: "Working Collaboratively",
+                isSubheading: true
+              },
+              {
+                type: 'text',
+                text: "Prioritize fast feedback and focus on eliminating communication barriers to get things done efficiently"
+              },
+              {
+                type: 'heading',
+                text: "Building Iteratively",
+                isSubheading: true
+              },
+              {
+                type: 'text',
+                text: "Deliver features and products in \"thin slices\" that reach your users early and often, then drive improvements based on feedback"
               },
               {
                 type: 'button',
-                text: 'See my work',
+                text: 'more about me',
                 local: true,
-                link: '/work'
+                link: '/about'
               }
             ]}
           />
@@ -39,35 +56,28 @@ const Home = () => {
         <div className='home-content-container'>
           <img src="./assets/pixel-6-mockups.png" className='hero-image' />
           <ContentBlock
-            title='Methodology'
             content={[
               {
-                type: 'text',
-                content: "Working with other developers, designers, and business stakeholders is one of the things I enjoy most about building software. I prefer:"
+                type: 'heading',
+                text: "Development"
               },
               {
                 type: 'text',
-                content: "Working Collaboratively",
-                bold: true
+                text: "I've worked in a variety of contexts and roles, from Fortune 500 to non-profit and individual contributor to tech lead. I do my best to cultivate a balance between breadth and depth of technical expertise so that I can be effective as an adivisor as well as when I'm writing code."
               },
               {
                 type: 'text',
-                content: "Prioritize fast feedback and focus on eliminating communication barriers to get things done efficiently"
+                text: "Most of my projects have been in JavaScript, TypeScript, and Java, but I jump at the chance to learn new technologies, techniques, and architectural patterns."
               },
               {
                 type: 'text',
-                content: "Building Iteratively",
-                bold: true
-              },
-              {
-                type: 'text',
-                content: "Deliver features and products in \"thin slices\" that reach your users early and often, then drive improvements based on feedback"
+                text: "I prefer to work in environments where pair programming, continuous integration / continuous delivery, and automated testing are encouraged."
               },
               {
                 type: 'button',
-                text: 'more about me',
+                text: 'See my work',
                 local: true,
-                link: '/about'
+                link: '/work'
               }
             ]}
           />

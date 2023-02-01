@@ -1,7 +1,7 @@
 .terminal {
   position: relative;
   width: 600px;
-  height: 320px;
+  height: 400px;
   font-family: 'Source Code Pro', monospace;
   font-size: 14px;
   line-height: 18px;
@@ -9,7 +9,7 @@
   border-radius: 8px;
   outline: 1px solid #4B4F5D;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transition: all .3s;
+  transition: var(--standard-transition);
   animation-duration: 1s;
   animation-name: slide-in-from-left;
 }
@@ -57,7 +57,7 @@
 }
 
 .terminal-code-caret {
-  color: #FF5618;
+  color: var(--highlight);
 }
 
 .terminal-line-header {

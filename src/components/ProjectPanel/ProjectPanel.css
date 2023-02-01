@@ -15,7 +15,7 @@
 }
 
 .project-panel-image {
-  transition: all .3s;
+  transition: var(--standard-transition);
   width: 100%;
   z-index: -1;
   filter: blur(0px);
@@ -30,8 +30,8 @@
 }
 
 .project-panel-content {
-  transition: all .3s;
-  background: linear-gradient(#18191e83, #18191EFF);
+  transition: var(--standard-transition);
+  background: linear-gradient(var(--background-half-opacity), var(--background-full-opacity));
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@
 
 .project-panel-tag {
   white-space: nowrap;
-  background-color: #FFF9FB;
+  background-color: var(--off-white);
   color: #23242C;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   font-size: 12px;
@@ -102,7 +102,7 @@
 
 .github-button {
   position: relative;
-  transition: all .3s;
+  transition: var(--standard-transition);
   box-sizing: border-box;
   color: black;
   background-color: white;
@@ -129,12 +129,12 @@
 
 .github-icon {
   opacity: 1;
-  transition: all .3s;
+  transition: var(--standard-transition);
 }
 
 .github-icon-white {
   opacity: 0;
-  transition: all .3s;
+  transition: var(--standard-transition);
 }
 
 .github-button:hover > .github-button-icons > .github-icon {
@@ -147,7 +147,7 @@
 
 .project-button {
   position: relative;
-  transition: all .3s;
+  transition: var(--standard-transition);
   box-sizing: border-box;
   color: black;
   background-color: white;
@@ -164,7 +164,7 @@
 }
 
 .project-button:hover, .github-button:hover {
-  background-color: #FF5618;
+  background-color: var(--highlight);
   color: white;
 }
 

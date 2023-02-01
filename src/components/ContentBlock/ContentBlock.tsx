@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import './ContentBlock.css';
-import { ContentItem, isButtonContentItem, isTextContentItem } from './ContentItems';
+import { ContentItem, isButtonContentItem, isHeadingContentItem, isTextContentItem } from './ContentItems';
 
 interface ContentBlockProps {
-  title: string;
   content: ContentItem[];
 }
+
+const heading = (text: string, isSubheading: boolean) =>
+  <span className={isSubheading ? 'subheading' : 'heading'}>{text}</span>
 
 const paragraph = (text: string, bold: boolean) =>
   <span className={`content-paragraph${bold ? ' bold-text' : ''}`}>
@@ -23,17 +25,17 @@ const button = (text: string, local: boolean, link: string) =>
 
 const createContent = (content: ContentItem[]): JSX.Element[] =>
   content.map(item => {
-    if (isTextContentItem(item)) return paragraph(item.content, item.bold ?? false);
+    if (isHeadingContentItem(item)) return heading(item.text, item.isSubheading ?? false);
+    if (isTextContentItem(item)) return paragraph(item.text, item.bold ?? false);
     if (isButtonContentItem(item)) return button(item.text, item.local, item.link);
     else return <></>;
   })
 
-const ContentBlock = ({ title, content }: ContentBlockProps) => {
+const ContentBlock = ({ content }: ContentBlockProps) => {
   
 
   return (
     <div className='content-block'>
-      <span className='heading'>{title}</span>
       {createContent(content)}
     </div>
   )

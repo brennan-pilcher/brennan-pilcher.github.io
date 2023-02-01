@@ -19,6 +19,7 @@ const Terminal = () => {
       </div>
       <div className='terminal-interior'>
         <div><span className='terminal-code-dir'>~/code</span><span className='terminal-code-caret'> ❯ </span><span>cat ~/Documents/about-me.txt</span></div>
+        <TerminalLine text={' '} />
         <TerminalLine
           isHeader={true}
           text={'[name]'}
@@ -26,6 +27,7 @@ const Terminal = () => {
         <TerminalLine
           text={'  Brennan Pilcher'}
         />
+        <TerminalLine text={' '} />
         <TerminalLine
           isHeader={true}
           text={'[email]'}
@@ -33,6 +35,7 @@ const Terminal = () => {
         <TerminalLine
           text={'  brennan.pilcher@gmail.com'}
         />
+        <TerminalLine text={' '} />
         <TerminalLine
           isHeader={true}
           text={'[github]'}
@@ -40,6 +43,7 @@ const Terminal = () => {
         <TerminalLine
           text={'  @brennan-pilcher'}
         />
+        <TerminalLine text={' '} />
         <TerminalLine
           isHeader={true}
           text={'[years-of-experience]'}

@@ -5,11 +5,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #18191ee8;
+  background-color: var(--background-half-opacity);
   z-index: 99;
-  /* transition: all .3s; */
   backdrop-filter: blur(4px);
-  padding: 12px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -17,6 +16,12 @@
   gap: 64px;
   animation-name: fade-in;
   animation-duration: .3s;
+}
+
+@media (max-width: 576px) {
+  .menu-overlay {
+    padding: 12px;
+  }
 }
 
 @keyframes fade-in {

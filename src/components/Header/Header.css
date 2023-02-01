@@ -1,5 +1,4 @@
 .header {
-  margin: 24px;
   display: flex;
   justify-content: space-between;
 }
@@ -24,17 +23,17 @@
 }
 
 .last-name {
-  color: #18191E;
-  background-color: #FFF9FB;
+  color: var(--background);
+  background-color: var(--off-white);
   padding: 0 10px;
 }
 
 .title:hover > .first-name {
-  color: #FF5618;
+  color: var(--highlight);
 }
 
 .title:hover > .last-name {
-  background-color: #FF5618;
+  background-color: var(--highlight);
 }
 
 .subtitle {
@@ -74,7 +73,7 @@
   line-height: 24px;
   left: -18px;
   opacity: 0;
-  color: #FF5618;
+  color: var(--highlight);
 }
 
 .navigation > a:hover::before {
@@ -87,9 +86,6 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    margin: 18px;
-  }
   
   .title {
     font-size: 28px;
@@ -102,11 +98,5 @@
 
   .title-container {
     gap: 6px;
-  }
-}
-
-@media (max-width: 568px) {
-  .header {
-    margin: 12px;
   }
 }
