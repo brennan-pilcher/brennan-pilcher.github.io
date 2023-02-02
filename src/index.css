@@ -8,10 +8,10 @@
   --line-height-md: 24px;
 
   --font-lg: 22px;
-  --line-height-lg: 28px;
+  --line-height-lg: 32px;
 
   --font-xl: 32px;
-  --line-height-xl: 38px;
+  --line-height-xl: 42px;
 
   --font-xxl: 48px;
   --line-height-xxl: 60px;
@@ -25,6 +25,7 @@
   --background-half-opacity: #18191E83;
   --background-full-opacity: #18191EFF;
   --off-white: #FFF9FB;
+  --blue-green: #4e8e9e;
   --highlight: #FF5618;
 
   --standard-transition: all 0.3s;
@@ -52,12 +53,13 @@ a {
 
 .link {
   text-decoration: underline;
-  text-decoration-color: var(--highlight);
-  transition: color 0.3s;
+  text-decoration-color: var(--blue-green);
+  transition: all 0.3s;
 }
 
 .link:hover {
   color: var(--highlight);
+  text-decoration-color: var(--highlight);
 }
 
 .container {

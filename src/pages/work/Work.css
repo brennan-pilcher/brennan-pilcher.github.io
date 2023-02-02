@@ -10,8 +10,9 @@
 
 .work-summary {
   font-family: 'Merriweather', serif;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: var(--font-lg);
+  line-height: var(--line-height-lg);
+  color: var(--blue-green);
   margin: 16px 0 48px 0;
   animation-name: slide-in-from-right;
   animation-duration: 1s;
@@ -19,8 +20,8 @@
 
 .work-section-title {
   font-family: 'Merriweather', serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: var(--font-xxl);
+  line-height: var(--line-height-xxl);
   margin: 32px 0 12px 0;
   animation-name: slide-in-from-right;
   animation-duration: 1s;

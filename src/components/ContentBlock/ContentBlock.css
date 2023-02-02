@@ -24,6 +24,7 @@
 }
 
 .content-paragraph {
+  color: var(--blue-green);
   font-family: 'PT Sans', serif;
   font-size: var(--font-md);
   font-weight: var(--font-weight-regular);
