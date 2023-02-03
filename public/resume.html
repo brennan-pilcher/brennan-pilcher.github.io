@@ -1,0 +1,566 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Brennan Pilcher</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Raleway:wght@400;600;700&display=swap);
+
+body {
+	background: #FFF9FB;
+	font-family: 'Cabin', sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #158cc4;
+}
+a:focus,
+a:hover {
+	color: #FF5618;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Raleway', serif;
+	font-weight: 600;
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "❯";
+	color: #949292;
+	float: left;
+	margin-left: -20px;
+	opacity: .8;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #18191e;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h1 {
+	font-size: 42px;
+	color: #FFF9FB;
+}
+#header h2 {
+  text-transform: uppercase;
+	color: #949292;
+	font-size: 24px;
+}
+#content h3 {
+	color: #949292;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "❯";
+	color: #949292;
+	font: 16px;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #FFF9FB;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Brennan Pilcher
+					</h1>
+					<h2>
+						Senior Software Developer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">brennan.pilcher@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">+1 410-350-9473</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>I blend design experience and artistic training with years of technical expertise to create memorable projects focused on the interactions between creative media and technology. I am currently employed as a Senior Consultant Software Developer at ThoughtWorks, a global technology consultancy.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/brennan-pilcher-a47146b8/">brennan-pilcher-a47146b8</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Thoughtworks</span>
+					<span class="date">
+						Sep 2018 — 
+					</span>
+				</h4>
+				<div class="position">
+					Senior Consultant - Software Developer
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+				<ul class="highlights">
+					<li class="bullet">Developed a replacement website for a national pizza chain serving millions of customers a day using TypeScript (React + NextJS + Redux + React Testing Library), GraphQL, and Docker, deployed on Kubernetes via GoCD. Led the design of the Order Confirmation flow, acted as Tech Lead for the team developing non-pizza product pages, and was a senior individual contributor on the cart and checkout team</li>
+					<li class="bullet">Collaborated with a sports analytics company to build out their core content experience using TypeScript (React Native + Redux + Jest), focusing on the news feed and data fetching / caching architecture of the app</li>
+					<li class="bullet">Built microservices to support the replacement for a key internal system at a national grocery retailer with Java (Spring Boot + JUnit) and Docker, deployed on Kubernetes in Azure via GitHub Actions</li>
+					<li class="bullet">Upgraded and maintained a business-critical human resources application for a leading global management consultancy using Java (Spring Boot + JUnit), TypeScript (React + Redux + Jest), Solr, Redis, and Docker, deployed to Kubernetes via GoCD</li>
+					<li class="bullet">Took part in an assessment for a smart home wellness company analyzing code, providing insights on workflow and technical architecture, and assisting the team in producing and presenting a report to the C-level executives</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Ceros</span>
+					<span class="date">
+						Feb 2017 — Jul 2018
+					</span>
+				</h4>
+				<div class="position">
+					Technical Support Specialist
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+				<ul class="highlights">
+					<li class="bullet">Provided in-depth technical troubleshooting and design assistance to internal stakeholders and hundreds of clients, including multiple Fortune 500 companies</li>
+					<li class="bullet">Wrote JavaScript code to augment the Ceros platform&#x27;s functionality</li>
+					<li class="bullet">Advised on the technical capability of the Ceros platform in sales meetings with clients</li>
+					<li class="bullet">Identified the need for a Ceros Developer portal, wrote documentation and extension guides for the Ceros SDK, and built out the site in WordPress + PHP</li>
+					<li class="bullet">Installed and configured office A/V and networking equipment</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Purchase College, SUNY</span>
+					<span class="date">
+						Apr 2016 — Feb 2017
+					</span>
+				</h4>
+				<div class="position">
+					Client Administrator
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+				<ul class="highlights">
+					<li class="bullet">Deployed, licensed, and managed hundreds of software packages for over 1,500 Mac and Windows computers using SCCM and Munki</li>
+					<li class="bullet">Managed Group Policy, computer accounts and organizational units in Active Directory, and oversaw transition to Windows 10</li>
+					<li class="bullet">Created bash, PowerShell, and Batch scripts to automate tasks</li>
+					<li class="bullet">Moderate macOS Server and Windows Server 2012 responsibilities</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Purchase College, SUNY</span>
+					<span class="date">
+						Aug 2015 — Feb 2017
+					</span>
+				</h4>
+				<div class="position">
+					Help Desk Technician
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+				<ul class="highlights">
+					<li class="bullet">Imaged, configured, and set up faculty/staff computers and academic labs for student use</li>
+					<li class="bullet">Provided in-depth technical troubleshooting of computers and AV equipment on-site, by telephone, and via remote desktop for faculty, staff, and students</li>
+					<li class="bullet">Patched broken RJ45 drops and performed on-site network troubleshooting</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Purchase College, SUNY</span>
+					<span class="date">
+						2011 — 2015
+					</span>
+				</h4>
+				<div class="area">
+					New Media
+				</div>
+				<div class="studyType">
+					Bachelor of Arts (B.A.) - Cum Laude
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Semester at Sea - University of Virginia</span>
+					<span class="date">
+						2014 — 2014
+					</span>
+				</h4>
+				<div class="area">
+					Study Abroad
+				</div>
+				<div class="studyType">
+					
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>G. W. Carver Center for Arts and Technology</span>
+					<span class="date">
+						2007 — 2011
+					</span>
+				</h4>
+				<div class="area">
+					Digital Filmmaking
+				</div>
+				<div class="studyType">
+					High School Degree with a certificate in Digital Filmmaking
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Programming Languages</h4>
+				</div>
+				<ul class="keywords">
+					<li>JavaScript</li>
+					<li>TypeScript</li>
+					<li>Java</li>
+					<li>HTML + CSS</li>
+					<li>Bash Scripting</li>
+					<li>Python</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Automated Testing</h4>
+				</div>
+				<ul class="keywords">
+					<li>React Testing Library</li>
+					<li>Jest</li>
+					<li>Mocha</li>
+					<li>JUnit</li>
+					<li>Mockito</li>
+					<li>Wiremock</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Methodologies</h4>
+				</div>
+				<ul class="keywords">
+					<li>Pair Programming</li>
+					<li>Test Driven Development</li>
+					<li>Continuous Integration / Continuous Delivery (CI/CD)</li>
+					<li>Agile Development</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Frameworks and Libraries</h4>
+				</div>
+				<ul class="keywords">
+					<li>React</li>
+					<li>React Native</li>
+					<li>Redux</li>
+					<li>NextJS</li>
+					<li>Spring Boot</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Infrastructure and Dev Ops</h4>
+				</div>
+				<ul class="keywords">
+					<li>Docker</li>
+					<li>Kubernetes</li>
+					<li>GoCD</li>
+					<li>Semaphore CI</li>
+					<li>GitHub Actions</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Storage</h4>
+				</div>
+				<ul class="keywords">
+					<li>MySQL / MariaDB</li>
+					<li>Postgres</li>
+					<li>Redis</li>
+					<li>Apache Solr</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Design Tools</h4>
+				</div>
+				<ul class="keywords">
+					<li>Adobe Photoshop</li>
+					<li>Adobe Premiere Pro</li>
+					<li>Adobe After Effects</li>
+					<li>Blender</li>
+					<li>Figma</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Native Speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Spanish</strong>
+				</div>
+				<div class="fluency">
+					Limited Working
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Photography</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>PC Gaming</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Hiking</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>3D Modeling</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>3D Printing</h4>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+
+	</div>
+	
+	</body>
+</html>
