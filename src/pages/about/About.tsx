@@ -7,9 +7,10 @@ const About = () => {
     <>
       <Header />
       <div className='container'>
-        <p>
-          about
-        </p>
+        <div className='about-content'>
+          <span>Brennan Pilcher</span>
+          <img src='./assets/headshot-small.jpg' />
+        </div>
       </div>
     </>
   )

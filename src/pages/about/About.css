@@ -1,0 +1,8 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.about-content > * {
+  max-width: 100%;
+}

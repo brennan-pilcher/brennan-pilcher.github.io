@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=PT+Sans:wght@400;700&family=Raleway:wght@300;400;600;700&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600&family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=PT+Sans:wght@400;700&family=Raleway:wght@300;400;600;700&family=Source+Code+Pro&display=swap');
 
 :root {
+
+  --font-xs: 12px;
+  --line-height-xs: 12px;
+
   --font-sm: 16px;
   --line-height-sm: 20px;
 
@@ -24,8 +28,9 @@
   --background: #18191E;
   --background-half-opacity: #18191E83;
   --background-full-opacity: #18191EFF;
+  --eerie-black: #23242C;
   --off-white: #FFF9FB;
-  --blue-green: #4e8e9e;
+  --blue-green: rgb(100, 171, 189);
   --highlight: #FF5618;
 
   --standard-transition: all 0.3s;
