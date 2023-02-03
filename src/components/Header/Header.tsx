@@ -9,7 +9,7 @@ const Navigation = ({ mobile, closeMenuOverlay }: { mobile: boolean, closeMenuOv
         <div className={`navigation${mobile ? '-mobile' : ''}`}>
           <Link to={`/work`} onClick={closeMenuOverlay}><span>work</span></Link>
           <Link to={`/about`} onClick={closeMenuOverlay}><span>about</span></Link>
-          <a href="https://pilcher.dev/resume/" target="_blank" rel="noreferrer" onClick={closeMenuOverlay}><span>résumé</span></a>
+          <a href="https://pilcher.dev/resume.html" target="_blank" rel="noreferrer" onClick={closeMenuOverlay}><span>résumé</span></a>
         </div>
     );
 };
