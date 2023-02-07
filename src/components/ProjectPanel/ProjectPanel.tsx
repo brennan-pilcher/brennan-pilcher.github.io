@@ -16,7 +16,7 @@ const Description = ({ description }: {description: string}) => <span className=
 const Tags = ({ tags }: {tags: string[]}) => (
   <div className='project-panel-tags'>
     {tags.map(
-      (tag: string) => <span className='project-panel-tag'>{tag}</span>
+      (tag: string, index: number) => <span key={`${tag}-${index}`} className='project-panel-tag'>{tag}</span>
     )}
   </div>
 );

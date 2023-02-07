@@ -16,6 +16,7 @@ const Home = () => {
         </div>
         <div className='home-content-container'>
           <ContentBlock
+            id='methodology'
             content={[
               {
                 type: 'heading',
@@ -56,6 +57,7 @@ const Home = () => {
         <div className='home-content-container'>
           <img src="./assets/pixel-6-mockups.png" className='hero-image' />
           <ContentBlock
+            id='development'
             content={[
               {
                 type: 'heading',

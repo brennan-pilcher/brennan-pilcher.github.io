@@ -10,6 +10,7 @@ const About = () => {
       <div className='container'>
         <div className='about-content'>
           <ContentBlock
+            id='about'
             content={[
               {
                 type: 'heading',

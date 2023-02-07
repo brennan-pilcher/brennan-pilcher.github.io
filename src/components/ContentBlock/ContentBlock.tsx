@@ -4,33 +4,38 @@ import { ContentItem, isButtonContentItem, isHeadingContentItem, isTextContentIt
 
 interface ContentBlockProps {
   content: ContentItem[];
+  id: string;
 }
 
-const heading = (text: string, isSubheading: boolean) =>
-  <span className={isSubheading ? 'subheading' : 'heading'}>{text}</span>
+const heading = (key: string, text: string, isSubheading: boolean) =>
+  <span key={key} className={isSubheading ? 'subheading' : 'heading'}>{text}</span>
 
-const paragraph = (text: string, bold: boolean) =>
-  <span className={`content-paragraph${bold ? ' bold-text' : ''}`}>
+const paragraph = (key: string, text: string, bold: boolean) =>
+  <span key={key} className={`content-paragraph${bold ? ' bold-text' : ''}`}>
     {text}
   </span>
 
-const button = (text: string, local: boolean, link: string) => 
+const button = (key: string, text: string, local: boolean, link: string) => 
   local ?
-    <Link  className='content-button' to={link}><span>{text}</span><span className='content-button-text-accent'>❯</span></Link>
-  : <a className='content-button' href={link} rel="noreferrer">{text}<span className='content-button-text-accent'>❯</span></a>
+    <Link key={key} className='content-button' to={link}><span>{text}</span><span className='content-button-text-accent'>❯</span></Link>
+  : <a key={key} className='content-button' href={link} rel="noreferrer">{text}<span className='content-button-text-accent'>❯</span></a>
 
-const createContent = (content: ContentItem[]): JSX.Element[] =>
-  content.map(item => {
-    if (isHeadingContentItem(item)) return heading(item.text, item.isSubheading ?? false);
-    if (isTextContentItem(item)) return paragraph(item.text, item.bold ?? false);
-    if (isButtonContentItem(item)) return button(item.text, item.local, item.link);
+const createKey = (key: string, index: number) => `${key}-${index}`;
+
+const createContent = (content: ContentItem[], id: string): JSX.Element[] =>
+  content.map((item, index) => {
+    const key = createKey(id, index);
+    
+    if (isHeadingContentItem(item)) return heading(key, item.text, item.isSubheading ?? false);
+    if (isTextContentItem(item)) return paragraph(key, item.text, item.bold ?? false);
+    if (isButtonContentItem(item)) return button(key, item.text, item.local, item.link);
     else return <></>;
   })
 
-const ContentBlock = ({ content }: ContentBlockProps) => {
+const ContentBlock = ({ content, id }: ContentBlockProps) => {
   return (
     <div className='content-block'>
-      {createContent(content)}
+      {createContent(content, id)}
     </div>
   )
 }
