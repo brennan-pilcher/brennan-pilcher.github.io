@@ -14,14 +14,10 @@ const paragraph = (text: string, bold: boolean) =>
     {text}
   </span>
 
-const button = (text: string, local: boolean, link: string) =>
-  <div className='content-button'>
-    {
-      local ?
-        <Link to={link}><span>{text}</span><span className='content-button-text-accent'>❯</span></Link>
-      : <a href={link} rel="noreferrer">{text}<span className='content-button-text-accent'>❯</span></a>
-    }
-  </div>
+const button = (text: string, local: boolean, link: string) => 
+  local ?
+    <Link  className='content-button' to={link}><span>{text}</span><span className='content-button-text-accent'>❯</span></Link>
+  : <a className='content-button' href={link} rel="noreferrer">{text}<span className='content-button-text-accent'>❯</span></a>
 
 const createContent = (content: ContentItem[]): JSX.Element[] =>
   content.map(item => {
@@ -32,8 +28,6 @@ const createContent = (content: ContentItem[]): JSX.Element[] =>
   })
 
 const ContentBlock = ({ content }: ContentBlockProps) => {
-  
-
   return (
     <div className='content-block'>
       {createContent(content)}
