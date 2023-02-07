@@ -1,8 +1,27 @@
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
 }
 
 .about-content > * {
   max-width: 100%;
+}
+
+.about-portrait {
+  border-radius: 16px;
+  animation-name: slide-in-from-left;
+  animation-duration: 1s;
+}
+
+@media (max-width: 576px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-portrait {
+    order: -1;
+    animation-name: slide-in-from-bottom;
+  }
 }

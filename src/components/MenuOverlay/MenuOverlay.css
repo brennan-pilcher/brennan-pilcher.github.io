@@ -14,7 +14,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   gap: 64px;
-  animation-name: fade-in;
+  animation-name: fade-in-with-blur;
   animation-duration: .3s;
 }
 
@@ -24,7 +24,7 @@
   }
 }
 
-@keyframes fade-in {
+@keyframes fade-in-with-blur {
   from {
     opacity: 0;
     backdrop-filter: blur(0px);

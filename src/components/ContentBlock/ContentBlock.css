@@ -68,5 +68,6 @@
   
   .content-block {
     gap: 6px;
+    animation-name: slide-in-from-bottom;
   }
 }

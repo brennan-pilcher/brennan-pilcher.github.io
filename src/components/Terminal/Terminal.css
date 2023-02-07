@@ -67,6 +67,11 @@
 @media (max-width: 768px) {
   .terminal {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .terminal {
     animation-name: slide-in-from-bottom;
   }
 }
