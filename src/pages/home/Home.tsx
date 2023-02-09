@@ -1,4 +1,5 @@
-import { useEffect } from 'react';import ContentBlock from '../../components/ContentBlock/ContentBlock';
+import ContentBlock from '../../components/ContentBlock/ContentBlock';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Terminal from '../../components/Terminal/Terminal';
 import './Home.css';
@@ -55,7 +56,7 @@ const Home = () => {
           <Terminal />
         </div>
         <div className='home-content-container'>
-          <img src="./assets/pixel-6-mockups.png" className='hero-image' />
+          <img src="./assets/pixel-6-mockups.png" alt='mobile app examples' className='hero-image' />
           <ContentBlock
             id='development'
             content={[
@@ -85,6 +86,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -100,51 +100,6 @@
   white-space: pre;
 }
 
-.github-button {
-  position: relative;
-  transition: var(--standard-transition);
-  box-sizing: border-box;
-  color: black;
-  background-color: white;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.github-button-icons {
-  width: 100%;
-  height: 100%;
-}
-
-.github-button-icons > img {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  left: 8px;
-  top: 8px;
-}
-
-.github-icon {
-  opacity: 1;
-  transition: var(--standard-transition);
-}
-
-.github-icon-white {
-  opacity: 0;
-  transition: var(--standard-transition);
-}
-
-.github-button:hover > .github-button-icons > .github-icon {
-  opacity: 0;
-}
-
-.github-button:hover > .github-button-icons > .github-icon-white {
-  opacity: 1;
-}
-
 .project-button {
   position: relative;
   transition: var(--standard-transition);

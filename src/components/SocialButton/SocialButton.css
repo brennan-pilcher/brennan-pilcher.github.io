@@ -1,0 +1,44 @@
+.social-button {
+  position: relative;
+  transition: var(--standard-transition);
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button:hover {
+  background-color: var(--highlight);
+  color: white;
+}
+
+.social-button-icons > img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 8px;
+}
+
+.social-icon-default {
+  opacity: 1;
+  transition: var(--standard-transition);
+}
+
+.social-icon-hover {
+  opacity: 0;
+  transition: var(--standard-transition);
+}
+
+.social-button:hover > .social-button-icons > .social-icon-default {
+  opacity: 0;
+}
+
+.social-button:hover > .social-button-icons > .social-icon-hover {
+  opacity: 1;
+}

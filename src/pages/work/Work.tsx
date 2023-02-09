@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import ProjectPanel from '../../components/ProjectPanel/ProjectPanel';
 import './Work.css';
@@ -88,6 +89,7 @@ const Work = () => {
             />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

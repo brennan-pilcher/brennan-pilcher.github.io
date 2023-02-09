@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import ContentBlock from '../../components/ContentBlock/ContentBlock';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import './About.css';
 
@@ -52,9 +52,10 @@ const About = () => {
               }
             ]}
           />
-          <img className='about-portrait' src='./assets/headshot-small.jpg' />
+          <img className='about-portrait' alt='portrait' src='./assets/headshot-small.jpg' />
         </div>
       </div>
+      <Footer />
     </>
   )
 }

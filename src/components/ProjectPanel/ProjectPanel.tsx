@@ -1,3 +1,4 @@
+import SocialButton from '../SocialButton/SocialButton';
 import './ProjectPanel.css';
 
 interface ProjectPanelProps {
@@ -27,17 +28,15 @@ const Links = ({ projectLink, codeLink }: { projectLink: string | undefined, cod
     <div className='project-panel-buttons'>
       {
         codeLink ?
-          <a href={codeLink} className='github-button' target='_blank'>
-            <div className='github-button-icons'>
-              <img className='github-icon-white' src='./assets/github-mark-white.svg' />
-              <img className='github-icon' src='./assets/github-mark.svg' />
-            </div>
-          </a>
+          <SocialButton
+            type='github'
+            link={codeLink}
+          />
         : <></>
       }
       {
         projectLink ?
-          <a href={projectLink} className='project-button' target='_blank'>
+          <a href={projectLink} className='project-button' rel='noreferrer' target='_blank'>
             <span className="material-symbols-outlined project-icon">
               exit_to_app
             </span>
@@ -51,7 +50,7 @@ const Links = ({ projectLink, codeLink }: { projectLink: string | undefined, cod
 const ProjectPanel = ({ title, description, tags, imageSrc, codeLink, projectLink }: ProjectPanelProps) => {
   return (
     <div className='project-panel'>
-      <img className='project-panel-image' src={imageSrc} />
+      <img className='project-panel-image' alt={`${title} project`} src={imageSrc} />
       <div className='project-panel-content'>
         <Title
           title={title}
