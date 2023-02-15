@@ -52,7 +52,7 @@ const About = () => {
               }
             ]}
           />
-          <img className='about-portrait' alt='portrait' src='./assets/headshot-small.jpg' />
+          <img className='about-portrait' alt='portrait' src='./assets/birb.jpg' />
         </div>
       </div>
       <Footer />
