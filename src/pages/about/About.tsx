@@ -40,15 +40,15 @@ const About = () => {
               },
               {
                 type: 'text',
-                text: "I love photography — primarily landscapes and architecture"
+                text: "I love photography — primarily landscapes and architecture."
               },
               {
                 type: 'text',
-                text: "I studied abroad on a ship, visiting more than a dozen countries by sea"
+                text: "I studied abroad on a ship, visiting more than a dozen countries by sea."
               },
               {
                 type: 'text',
-                text: "I've been learning 3D modeling and animation with Blender"
+                text: "I've been learning 3D modeling and animation with Blender."
               }
             ]}
           />
