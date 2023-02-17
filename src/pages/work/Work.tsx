@@ -13,7 +13,7 @@ const Work = () => {
         </div>
         <div className='work-summary'>
           <span>
-            Unfortunately I can't share a lot of details about my professional projects — as a consultant, most projects have been under non-disclosure agreements. However, I can share some project highlights with any sensitive information redacted.
+            I can't share a lot of details about my professional work — as a consultant, most projects have been under non-disclosure agreements. However, I can share some project highlights with any sensitive information redacted.
           </span>
         </div>
         <div className='projects'>
@@ -32,7 +32,7 @@ const Work = () => {
           <ProjectPanel
             title={'Global Consultancy'}
             description={"Worked on a full-stack internal web application with a React frontend and a backend supported by Solr and Spring Boot microservices. Contributed significantly to the design and the implementation of a new recommendations microservice as well as real-time notifications for users."}
-            tags={['typescript', 'react', 'redux', 'java', 'spring boot', 'solr', 'redis','junit', 'docker', 'kubernetes']}
+            tags={['typescript', 'react', 'redux', 'java', 'spring boot', 'solr', 'redis', 'junit', 'docker', 'kubernetes']}
             imageSrc={'./assets/consultancy-portrait.jpg'}
           />
           <ProjectPanel
