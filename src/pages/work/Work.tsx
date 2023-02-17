@@ -83,7 +83,7 @@ const Work = () => {
               title={"Where's Bernie?"}
               description={`A silly weekend project based on Where's Waldo and the viral photo of Bernie Sanders wearing mittens at the US presidential inauguration in 2020.`}
               tags={['javascript', 'html5 canvas', 'github pages']}
-              imageSrc={'./assets/wheres-bernie-portrait.png'}
+              imageSrc={'./assets/wheres-bernie-portrait.jpg'}
               codeLink={'https://github.com/brennan-pilcher/wheres-bernie'}
               projectLink={'https://pilcher.dev/wheres-bernie/'}
             />

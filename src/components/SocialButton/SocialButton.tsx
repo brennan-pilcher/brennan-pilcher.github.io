@@ -1,6 +1,6 @@
 import './SocialButton.css';
 
-export type SocialType = 'github' | 'linkedin' | 'email';
+export type SocialType = 'github' | 'linkedin' | 'email' | 'instagram';
 
 export interface SocialButtonProps {
   type: SocialType;
@@ -26,7 +26,11 @@ const socialIcons: SocialIcon = {
   email: {
     default: 'email.svg',
     hover: 'email-white.svg'
-  }
+  },
+  instagram: {
+    default: 'instagram.svg',
+    hover: 'instagram-white.svg'
+  },
 }
 
 const SocialButton = ({ type, link }: SocialButtonProps) => (
