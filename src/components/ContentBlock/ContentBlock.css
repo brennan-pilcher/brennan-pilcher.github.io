@@ -7,6 +7,7 @@
 }
 
 .heading {
+  color: var(--light-gray);
   font-family: 'Josefin Sans', serif;
   font-size: var(--font-xl);
   font-weight: 700;
@@ -16,6 +17,7 @@
 }
 
 .subheading {
+  color: var(--light-gray);
   font-family: 'Josefin Sans', serif;
   font-size: var(--font-lg);
   font-weight: 700;
@@ -24,7 +26,7 @@
 }
 
 .content-paragraph {
-  color: var(--blue-green);
+  color: var(--text);
   font-family: 'PT Sans', serif;
   font-size: var(--font-md);
   font-weight: var(--font-weight-regular);

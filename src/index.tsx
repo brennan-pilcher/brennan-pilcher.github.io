@@ -9,12 +9,14 @@ import './index.css';
 import About from './pages/about/About';
 import Home from './pages/home/Home';
 import Work from './pages/work/Work';
+import Splash from './pages/splash/Splash';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Splash />} />
+        <Route path="home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="work" element={<Work />} />
       </Routes>

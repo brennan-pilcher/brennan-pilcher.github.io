@@ -29,11 +29,11 @@
 }
 
 .title:hover > .first-name {
-  color: var(--highlight);
+  color: var(--accent);
 }
 
 .title:hover > .last-name {
-  background-color: var(--highlight);
+  background-color: var(--accent);
 }
 
 .subtitle {

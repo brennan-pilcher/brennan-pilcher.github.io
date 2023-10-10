@@ -9,12 +9,12 @@ const Home = () => {
     <>
       <Header />
       <div className='container'>
-        <div className='hero'>
+        {/* <div className='hero'>
           <span>Hey there! I'm Brennan Pilcher.</span>
         </div>
         <div className='hero-subtitle'>
           <span>I'm a <span className='highlight'>full stack developer</span> with a background in <span className='highlight'>art and design</span>, currently working as a Senior Consultant at <a href='https://www.thoughtworks.com' target='_blank' rel='noreferrer' className='link'>Thoughtworks</a>.</span>
-        </div>
+        </div> */}
         <div className='home-content-container'>
           <ContentBlock
             id='methodology'

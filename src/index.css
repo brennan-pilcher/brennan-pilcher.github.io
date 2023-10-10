@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600&family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=PT+Sans:wght@400;700&family=Raleway:wght@300;400;600;700&family=Source+Code+Pro&display=swap');
 
 :root {
+  --background: #001b1e;
+  --background-half-opacity: #001b1e83;
+  --background-full-opacity: #001b1eFF;
+  --eerie-black: #23242C;
+  --off-white: #ebf8fa;
+  --blue-green: #38bdcc;
+  --light-gray: #707276;
+  --medium-gray: #10383d;
+  --bright-red: #ed230c;
+
+  --primary: var(--blue-green);
+  --secondary: var(--medium-gray);
+  --accent: var(--bright-red);
+  --text: var(--off-white);
+
   --font-xs: 12px;
   --line-height-xs: 12px;
 
@@ -23,14 +38,6 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  
-  --background: #18191E;
-  --background-half-opacity: #18191E83;
-  --background-full-opacity: #18191EFF;
-  --eerie-black: #23242C;
-  --off-white: #FFF9FB;
-  --blue-green: rgb(100, 171, 189);
-  --highlight: #FF5618;
 
   --standard-transition: all 0.3s;
 }
@@ -52,7 +59,7 @@ a {
 }
 
 .highlight {
-  color: var(--highlight);
+  color: var(--accent);
 }
 
 .link {
@@ -62,8 +69,8 @@ a {
 }
 
 .link:hover {
-  color: var(--highlight);
-  text-decoration-color: var(--highlight);
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .container {
