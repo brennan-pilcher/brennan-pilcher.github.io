@@ -5,6 +5,7 @@ import { ContentItem, isButtonContentItem, isHeadingContentItem, isTextContentIt
 interface ContentBlockProps {
   content: ContentItem[];
   id: string;
+  animate?: boolean;
 }
 
 const heading = (key: string, text: string, isSubheading: boolean) =>
@@ -32,9 +33,9 @@ const createContent = (content: ContentItem[], id: string): JSX.Element[] =>
     else return <></>;
   })
 
-const ContentBlock = ({ content, id }: ContentBlockProps) => {
+const ContentBlock = ({ content, id, animate = false }: ContentBlockProps) => {
   return (
-    <div className='content-block'>
+    <div className={`content-block ${animate ? 'animated' : ''}`}>
       {createContent(content, id)}
     </div>
   )

@@ -1,0 +1,10 @@
+.code-background {
+    white-space: pre-wrap;
+    position: fixed;
+    filter: blur(2px);
+    opacity: 0.2;
+    transform: translate(30px, -80px) rotate3d(30, -1, -5, 0.05turn);
+    width: 100vw;
+    height: 100vh;
+    z-index: -999;
+}

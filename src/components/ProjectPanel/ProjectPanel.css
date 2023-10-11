@@ -45,17 +45,17 @@
 }
 
 .project-panel-title {
-  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-family: 'Syne', sans-serif;
   font-size: var(--font-lg);
   font-size: var(--line-height-lg);
   font-weight: 700;
-  text-transform: capitalize;
   margin-bottom: 12px;
 }
 
 .project-panel-description {
-  font-family: 'Merriweather', sans-serif;
-  font-style: italic;
+  font-family: 'Lato', serif;
+  /* font-style: italic; */
   font-weight: 300;
   font-size: var(--font-md);
   line-height: var(--line-height-md);
@@ -81,6 +81,7 @@
   text-transform: uppercase;
   text-shadow: none;
   padding: 4px 6px;
+  border-radius: 4px;
 }
 
 .project-panel-bottom-section {
@@ -111,7 +112,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 8px;
+  border-radius: 4px;
 }
 
 .project-icon {
@@ -119,7 +121,7 @@
 }
 
 .project-button:hover, .github-button:hover {
-  background-color: var(--highlight);
+  background-color: var(--accent);
   color: white;
 }
 

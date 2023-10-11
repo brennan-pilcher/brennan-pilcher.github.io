@@ -11,10 +11,11 @@ const About = () => {
         <div className='about-content'>
           <ContentBlock
             id='about'
+            animate={true}
             content={[
               {
                 type: 'heading',
-                text: 'About'
+                text: 'Who I Am'
               },
               {
                 type: 'text',

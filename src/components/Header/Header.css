@@ -43,7 +43,7 @@
 }
 
 .navigation, .navigation-mobile {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
@@ -73,7 +73,7 @@
   line-height: 24px;
   left: -18px;
   opacity: 0;
-  color: var(--highlight);
+  color: var(--accent);
 }
 
 .navigation > a:hover::before {

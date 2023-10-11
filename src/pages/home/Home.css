@@ -1,21 +1,3 @@
-.hero {
-  font-family: 'Merriweather', serif;
-  font-size: var(--font-xxl);
-  line-height: var(--line-height-xxl);
-  animation-name: fade-in;
-  animation-duration: 1s;
-}
-
-.hero-subtitle {
-  font-family: 'Merriweather', serif;
-  font-size: var(--font-xl);
-  line-height: var(--line-height-xl);
-  color: var(--light-gray);
-  animation-name: fade-in;
-  animation-duration: 1s;
-  margin: 24px 0 0 0;
-}
-
 .hero-image {
   animation-name: slide-in-from-right;
   animation-duration: 1s;

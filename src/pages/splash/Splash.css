@@ -1,6 +1,16 @@
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+    gap: 40px;
+}
+
 .splash-title-container {
-    z-index: 999;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,6 +19,9 @@
 }
 
 .splash-title {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 62px;
@@ -24,16 +37,99 @@
     padding: 0 10px;
 }
 
-.splash-title:hover > .splash-first-name {
-    color: var(--accent);
-}
-
-.splash-title:hover > .splash-last-name {
-    background-color: var(--accent);
-}
-
 .splash-subtitle {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: .15s;
+    animation-fill-mode: both;
+    text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     letter-spacing: 4px;
+}
+
+.splash-body {
+    font-family: 'Lato', sans-serif;
+    font-size: var(--font-lg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.splash-body span {
+    animation-name: slide-in-from-top;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.splash-body span:nth-child(1) {
+    animation-delay: .3s;
+}
+
+.splash-body span:nth-child(2) {
+    animation-delay: .45s;
+}
+
+.splash-body span:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.splash-button-wrapper {
+    animation-name: slide-in-from-top;
+    animation-duration: 1s;
+    animation-delay: .75s;
+    animation-fill-mode: both;
+    min-width: 100%;
+}
+
+.body-link, .body-link:visited, .body-link:active, .body-link:focus {
+    transition: all 0.3s;
+    color: var(--blue-green);
+    text-decoration: var(--blue-green) underline;
+  }
+  
+.body-link:hover {
+    color: var(--accent);
+    text-decoration: var(--accent) underline;
+}
+
+.social-links {
+    animation-name: slide-in-from-top;
+    animation-duration: 1s;
+    animation-delay: .9s;
+    animation-fill-mode: both;
+}
+
+
+@media (max-width: 768px) {
+    .splash-container {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .splash-title {
+      font-size: var(--font-xl);
+    }
+  
+    .splash-subtitle {
+      font-size: 12px;
+      letter-spacing: 4px;
+    }
+
+    .splash-body {
+        font-size: var(--font-md);
+    }
+
+  }
+
+@media (max-width: 450px) {
+    .splash-container {
+        max-width: 100%;
+        padding: 6px;
+    }
+
+    .splash-title {
+        font-size: var(--font-xl);
+    }
 }
