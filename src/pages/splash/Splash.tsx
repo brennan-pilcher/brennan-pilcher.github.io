@@ -9,7 +9,7 @@ const descriptors = [
   'tech lead',
   'photography enthusiast',
   'gamer',
-  'senior consultant',
+  'lead consultant',
   'animal lover',
   'traveler',
   'typescript fan',
@@ -29,8 +29,8 @@ const Splash = () => {
               <span className='splash-subtitle'>code + design</span>
             </div>
             <div className='splash-body'>
-                <span>I'm a senior full-stack software developer with a background in art and design and a passion for creating engaging, thoughtful, and inclusive digital experiences.</span>
-                <span>I'm currently a Senior Consultant at <a className="body-link" rel="noreferrer" target="_blank" href="https://www.thoughtworks.com/">Thoughtworks</a>, where I've been working with and leading teams to deliver robust, performant, and testable software for the last five years.</span>
+                <span>I'm a full-stack software developer with a background in art and design and a passion for creating engaging, thoughtful, and inclusive digital experiences.</span>
+                <span>I'm currently a Lead Consultant at <a className="body-link" rel="noreferrer" target="_blank" href="https://www.thoughtworks.com/">Thoughtworks</a>, where I've been working with and leading teams to deliver robust, performant, and testable software for the last five years.</span>
                 <span>When I'm not coding, you can usually find me behind a camera, on a rock climbing wall, hiking, or gaming with friends.</span>
               </div>
             <div className='splash-button-wrapper'>
